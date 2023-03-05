@@ -6,6 +6,12 @@
   padding: 0px;
 }
 
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+    width: 550;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
 .logo {
   margin: left;
   top: 50px;
@@ -14,9 +20,5 @@
   padding: 150px;
 }
 
-.gsc-control-wrapper-cse {
-    width: 40%;
-}
 
-/*commitment testing message/*
 
