@@ -15,4 +15,10 @@
     width: 550px;
 }
 
+.text {
+   position: relative;
+   bottom: 50;
+   right: 0;
+}
+                
 
