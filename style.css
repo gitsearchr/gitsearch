@@ -28,5 +28,8 @@
 .gsc-input-box {
     border-radius: 5px;
 }
-                
+
+button.gsc-search-button.gsc-search-button-v2 {
+    border-radius: 10px;
+}
 
