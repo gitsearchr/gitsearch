@@ -93,16 +93,38 @@ function closeNav() {
 <html>  
 <body>  
 <center>
-<div id="map" style="width:1215px;height:560px;background:green"></div>  
+  <script src="{% static 'js/googlemaps.js' %}"></script>
+<div id="map" style="width:1215px;height:560px;background:green"></div> 
+  <script src="js/googlemaps.js"></script>
 <script>  
-function Map123() {  
-var mapOptions = {  
-    center:new google.maps.LatLng(51.508742,-0.120850),  
-    zoom: 10,  
-    mapTypeId: google.maps.MapTypeId.HYBRID  
-}  
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
-}  
+var curLat = null; //user location
+var curLon = null;
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+        window.alert("no location");
+    }
+}
+function showPosition(position) {
+    curLat = position.coords.latitude;
+    curLon = position.coords.longitude;
+}
+function initMap(){
+  getLocation() //finds out user location to fomat the map
+  if (curLat == null){
+    curLat = 42.3601;   //if the user location cannot be found, set default ones
+    curLon = -71.0589;   // of boston
+    console.log("random locations");
+  }
+  var options = {
+    zoom:10,
+    center:{lat:curLat, lng:curLon}
+  }
+    var map = new google.maps.Map(document.getElementById("map"),options);
+}
+If possible, could you please point me to what 
 </script>  
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script>  
 </body>  
