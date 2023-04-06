@@ -1,35 +1,97 @@
-.logo2 {
-    padding: 14px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.gsc-control-wrapper-cse {
-    width: 75%;
+body {
+    background: #55a0dd;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo1 {
-    width:;
-    height: 240px;
+section {
+    height: 500px;
+    width: 600px;
 }
 
-.gsc-control-cse.gsc-control-cse-en {
-    width: 550px;
+.col {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: #00000059 0px 5px 15px;
 }
 
-.text {
-   position: relative;
-   bottom: 50;
-   right: 0;
+.box {
+    display: inline-block;
+    padding: 0 5px;
 }
 
-.gsc-control-cse.gsc-control-cse-nl {
-    width: 700px;
+.first {
+    border-right: 2px solid #40576d33;
 }
 
-.gsc-input-box {
-    border-radius: 5px;
+input[type=number] {
+    outline: none;
+    border: none;
+    width: 50px;
+    color: #131c35;
+    font-size: 24px;
+    padding: 10px 0px;
+    margin-left: 10px;
 }
 
-button.gsc-search-button.gsc-search-button-v2 {
-    border-radius: 10px;
+.second {
+    border-right: 2px solid #40576d33;
 }
 
+button {
+    border: none;
+    color: #131c35;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: transparent;
+    padding: 10px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #40576d1a;
+}
+
+button.active {
+    background-color: #73b1e333;
+    color: #5271ff;
+}
+
+.third {
+    border-right: 2px solid #40576d33;
+}
+
+.third button:focus {
+    background-color: #73b1e333;
+    color: #5271ff;
+}
+
+input[type=color] {
+    width: 35px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    resize: vertical;
+}
