@@ -4,124 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Set GitSearch as Default Search Engine</title>
+    <title>Set as Default Search Engine</title>
     <style>
         body {
-            font-family: 'Tahoma', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FF5733;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #111; /* Dark background color */
+            color: #fff; /* Light text color */
         }
-
-        header {
-            background-color: #FF5733;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            font-family: 'Tahoma', sans-serif;
+        h1 {
+            color: #FF5733; /* GitHub's primary color */
         }
-
-        section {
-            max-width: 600px;
-            margin: 2em auto;
-            background-color: #fff;
-            padding: 2em;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        p {
+            max-width: 800px;
+            line-height: 1.6;
         }
-
-         h2, h3 {
+        a {
             color: #FF5733;
+            text-decoration: none;
         }
-
-        ol {
-            margin-top: 0;
-            padding-left: 20px;
+        a:hover {
+            text-decoration: underline;
         }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #FF5733;
-            color: #fff;
+        h2 {
+            color: #FF5733;
+            border-bottom: 2px solid #FF5733;
+            padding-bottom: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <h1>Set GitSearch As  Your Default Search Engine</h1>
 
-    <header>
-        <h1 style="margin: 0;">Set GitSearch as Default Search Engine</h1>
-    </header>
+    <p>Make GitSearch your default search engine on various browsers by following the instructions below:</p>
 
-    <section>
-        <h2>Instructions</h2>
-        <p>Follow the instructions below to set GitSearch as your default search engine in different browsers:</p>
+    <h2>Google Chrome</h2>
+    <ol>
+        <li>Open Chrome and click on the three dots in the top-right corner.</li>
+        <li>Select "Settings" from the menu.</li>
+        <li>Under "Search engine," click on "Manage search engines."</li>
+        <li>Find GitSearch in the "Other search engines" section and click "Make default."</li>
+    </ol>
 
-        <h3>Google Chrome</h3>
-        <ol>
-            <li>Open Chrome and go to Settings.</li>
-            <li>Scroll down to the "Search engine" section.</li>
-            <li>Select "Manage search engines."</li>
-            <li>Add a new search engine with the following details:
-                <ul>
-                    <li>Name: GitSearch</li>
-                    <li>Keyword: gitsearch</li>
-                    <li>URL: https://www.gitsearch.com/search?q=%s</li>
-                </ul>
-            </li>
-            <li>Hover over GitSearch and click "Make default."</li>
-        </ol>
+    <h2>Mozilla Firefox</h2>
+    <ol>
+        <li>Open Firefox and click on the three horizontal lines in the top-right corner.</li>
+        <li>Select "Options" (or "Preferences" on Mac).</li>
+        <li>Click on "Search" in the left sidebar.</li>
+        <li>Under "Default Search Engine," choose GitSearch from the dropdown menu.</li>
+    </ol>
 
-        <h3>Mozilla Firefox</h3>
-        <ol>
-            <li>Open Firefox and go to Preferences.</li>
-            <li>Scroll down to the "Search" section.</li>
-            <li>Choose "Add Search Engine" and enter the following details:
-                <ul>
-                    <li>Name: GitSearch</li>
-                    <li>Keyword: gitsearch</li>
-                    <li>URL: https://www.gitsearch.com/search?q=%s</li>
-                </ul>
-            </li>
-            <li>Select GitSearch from the list and click "Set as Default."</li>
-        </ol>
+    <h2>Microsoft Edge</h2>
+    <ol>
+        <li>Open Edge and click on the three dots in the top-right corner.</li>
+        <li>Select "Settings."</li>
+        <li>Scroll down and click on "View advanced settings."</li>
+        <li>Under "Search in the address bar with," choose GitSearch from the dropdown menu.</li>
+    </ol>
 
-        <h3>Microsoft Edge</h3>
-        <ol>
-            <li>Open Edge and go to Settings.</li>
-            <li>Scroll down to the "View advanced settings" section.</li>
-            <li>Under "Search in the address bar with," choose "Add new."</li>
-            <li>Enter the following details:
-                <ul>
-                    <li>Name: GitSearch</li>
-                    <li>Keyword: gitsearch</li>
-                    <li>URL: https://www.gitsearch.com/search?q=%s</li>
-                </ul>
-            </li>
-            <li>Select GitSearch from the list and click "Add as default."</li>
-        </ol>
+    <h2>Safari</h2>
+    <ol>
+        <li>Open Safari and click on "Safari" in the top menu.</li>
+        <li>Select "Preferences."</li>
+        <li>Go to the "Search" tab.</li>
+        <li>Choose GitSearch from the "Search engine" dropdown menu.</li>
+    </ol>
 
-        <h3>Safari</h3>
-        <ol>
-            <li>Open Safari and go to Preferences.</li>
-            <li>Click on "Search" and choose "Manage Search Engines."</li>
-            <li>Click "+" to add a new search engine with the following details:
-                <ul>
-                    <li>Name: GitSearch</li>
-                    <li>Keyword: gitsearch</li>
-                    <li>URL: https://www.gitsearch.com/search?q=%s</li>
-                </ul>
-            </li>
-            <li>Select GitSearch from the list and click "Set as Default."</li>
-        </ol>
+    <p>Now you can enjoy searching with GitSearch directly from your browser!</p>
 
-    </section>
-
-    <footer>
-        <p>GitSearch is now set as your default search engine. Enjoy searching!</p>
-        <p>©GitSearch 2023 | All Rights Reserved
-    </footer>
-
+    <h2>Need Help?</h2>
+    <p>If you encounter any issues or have questions, please <a href="mailto:support@gitsearch.com">contact our support team</a>.</p>
 </body>
 </html>
